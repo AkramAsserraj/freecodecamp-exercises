@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform </p>
+    <form id="survey-form">
+      <label id="name-label">Name</label>
+      <input type="texte" id="name" placeholder="Entrer votre nom" required><br>
+      <label id="email-label">Email</label>
+      <input type="email" id="email" placeholder="Entrer votre email" required><br>
+      <label id="number-label">Age(optional)</label>
+      <input type="number" id="number" placeholder="Entrer vottre age" min="1" max="120">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown">
+        <option value="" selected>Select current role</option>
+        <option>Students</option>
+        <option>Full time job</option>
+        <option>other</option>
+      </select>
+      <p> Would you recommend freeCodeCamp to a friend?</p>
+      <input type="radio" value="Definitely" name="recomendation">Definitely
+      <input type="radio" value="Maybe" name="recomendation">Maybe
+      <input type="radio" value="Not sure" name="recomendation">Not sure
+      <p>What is your favorite feature of freeCodeCamp?</p>
+      <select>
+        <option value="" selected>Select an option</option>
+        <option>Challenges</option>
+        <option>Projects</option>
+        <option>Certificats</option>
+      </select>
+      <p>What would you like to see improved? (Check all that apply)</p>
+      <input type="checkbox" value="#survey-form">Front-end
+      <input type="checkbox" value="#survey-form">Back-end
+      <input type="checkbox" value="#survey-form">Data Visualization
+      <input type="checkbox" value="#survey-form">Challenges
+      <input type="checkbox" value="#survey-form">Videos<br>
+      <p>Any comments or suggestions?</p>
+      <textarea placeholder="Enter your comment here...">
+      </textarea>
+      <br>
+      <input type="submit" id="submit" value="Submit">
+
+
+    </form>
+  </body>
+</html>
